@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.validate.min.js"></script>
+    <script src="Scripts/jquery-1.10.2.intellisense.js"></script>
+    <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="Scripts/jquery-ui-1.10.3.min.js"></script>
+    <script src="Scripts/PatientInformation.js"></script>
+</head>
+<body>
+    <table style="width:100%;" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="text" align="right" valign="middle">ForeName :</td>
+            <td><input id="txtForeName" minlength="3" maxlength="50" class="Controls" type="text" required /></td>
+        </tr>
+        <tr>
+            <td class="text" align="right" valign="middle">SurName :</td>
+            <td><input id="txtSurName" minlength="2" maxlength="50" class="Controls" type="text" required /></td>
+        </tr>
+        <tr>
+            <td class="text" align="right" valign="middle">Date of Birth :</td>
+            <td><input id="txtDOB" type="text" class="Controls date-picker" pattern="\d{1,2}/\d{1,2}/\d{4}" /></td>
+        </tr>
+        <tr>
+            <td class="text" align="right" valign="middle">Gender :</td>
+            <td>
+                <select id="ddlGender" class="ddlControls" required>
+                    <option value="3">Select</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="text" align="right">Telephone Numbers </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="text" align="right" valign="middle">Home :</td>
+            <td><input id="txtHome" class="Controls" max="14" type="text" /></td>
+        </tr>
+        <tr>
+            <td class="text" align="right" valign="middle">Work :</td>
+            <td><input id="txtWork" class="Controls" max="14" type="text" /></td>
+        </tr>
+        <tr>
+            <td class="text" align="right" valign="middle">Mobile :</td>
+            <td><input id="txtMobile" class="Controls" max="14" type="text" /></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle">
+                <input id="btnSave" class="button" type="button" value="Save" />
+            </td>
+            <td>
+                <input id="btnSearch" class="button" type="button" value="Search Record" />
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height:150px;" align="center">
+                <div id="div3" style="height:300px;width:620px;border:solid 1px silver;overflow:auto">
+                    <table id="tblPatientInfo" cellpadding="0" cellspacing="0" width="618">
+                        <tr>
+                            <td class="gridHeader" style="width:25%;font-weight:bold;">ForeName</td>
+                            <td class="gridHeader" style="width:25%;font-weight:bold;">
+                                SurName
+                            </td>
+                            <td class="gridHeader" style="width:25%;font-weight:bold;">
+                                DOB
+                            </td>
+                            <td class="gridHeader" style="width:25%;font-weight:bold;">
+                                Gender
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
